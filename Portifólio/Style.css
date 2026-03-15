@@ -15,7 +15,6 @@ body {
   justify-content: center;
   position: fixed;
   top: 15px;
-  background-color: #0a0a0a00;
   width: 100%;
   z-index: 1;
   flex-wrap: nowrap;
@@ -32,8 +31,7 @@ section {
   background-color: #111111;
   max-width: 700px;
   width: 95%;
-  height: auto;
-  min-height: 40px;
+  min-height: 30px;
   flex-wrap: wrap;
   padding-bottom: 10px;
   text-align: center;
@@ -65,7 +63,7 @@ section {
   height: 20px;
 }
 
-#home {
+.home {
   position: absolute;
   top: 25%;
   width: 40%;
@@ -74,7 +72,7 @@ section {
   color: #faeeee;
 }
 
-#home > div {
+.home > div {
   margin-top: 10px;
 }
 .spam {
@@ -86,7 +84,7 @@ section {
   color: #faeeee;
 }
 
-#home > h1 {
+.home > h1 {
   text-align: center;
   font-family: "montserrat";
   text-shadow: 3px 3px 0#6d28d9;
@@ -94,14 +92,14 @@ section {
   font-size: 40px;
 }
 
-#home > h2 {
+.home > h2 {
   font-family: "montserrat";
   margin-top: 0;
   padding-top: 0;
   font-size: 25px;
 }
 
-#home > p {
+.home > p {
   text-align: justify;
 }
 
@@ -204,8 +202,9 @@ section {
 
 .sobre {
   position: absolute;
-  top: 25%;
+  top: 20%;
   width: 40%;
+  min-width: 300px;
   margin-left: 30%;
   color: #faeeee;
   padding: 1.5px 10px;
@@ -233,51 +232,134 @@ div {
   display: inline-block;
 }
 
-.sticky{
-  position: relative;
+.s{
+  margin-top: 5px;
 }
 
 .pai {
-  position: sticky;
-  top: 80px;
+  position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 15px;
 }
+
+.timeline{
+  position: absolute;
+  bottom: -30%;
+}
+
 .pai > .timeline > h2 {
   text-align: center;
   text-shadow: 3px 3px 0#6d28d9;
   font-size: 30px;
   font-family: monospace;
   width: auto;
-  white-space: nowrap;
+  white-space: wrap;
   color: #faeeee;
 }
 
 
 .time-line{
-  position: sticky;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  flex-wrap: wrap;
 }
 
 .time-line > div{
   background-color: #111111;
-  border-radius: 15px;
-}
-
-.time-line > div:hover{
-  border: .5px solid #8b5cf6;
-}
-
-.card1{
-  width: 400px;
-  height: 150px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.card1, .card2, .card3, .card4 {
+  min-width: 250px;
+}
+
+.time-line > div:hover{
+  border: 2px solid #8b5cf6;
+  transition: 0.5s;
+  box-shadow: 0 0 10px #4f46e5; 
+}
+
+.linha-guia{
   position: absolute;
-  bottom: -100px;
-  left: 100px;
-  
+  top: 12%;
+  width: .5px;
+  height: 140%;
+  left: 50%;
+  border: 2px solid #4e46e5a6;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.card1{
+  width: 30%;           
+  height: 150px;          
+  position: absolute;
+  top: 10%;
+  left: 50.2%;
+  transform: translateX(-100%);
+  border: 1px dashed #6d28d9;
+  border-right: 3px solid #4f46e5;
+}
+
+.card2{
+  width: 30%;           
+  height: 150px;          
+  position: absolute;
+  top: 43%;
+  right: 50%;
+  transform: translateX(100%);
+  border: 1px dashed #6d28d9;
+  border-left: 3px solid #4f46e5;
+}
+
+/* 33% a mais de altura para cada um */
+
+.card3{
+  width: 30%;           
+  height: 150px;          
+  position: absolute;
+  top: 76%;
+  left: 50.2%;
+  transform: translateX(-100%);
+  border: 1px dashed #6d28d9;
+  border-right: 3px solid #4f46e5;
+}
+
+.card4{
+  width: 30%;           
+  height: 150px;          
+  position: absolute;
+  top: 109%;
+  right: 50%;
+  transform: translateX(100%);
+  border: 1px dashed #6d28d9;
+  border-left: 3px solid #4f46e5;
+}
+
+.final{
+  width: 20%;
+  min-width: 220px;
+  height: 100px;
+  position: absolute;
+  top: 150%;
+  right: 50%;
+  transform: translateX(50%);
+  border: 2px solid #6d28d9;
+  box-shadow: 0 0 10px #4f46e5; 
+}
+
+.final > h3 {
+  color: #faeeee;
+  font-family: monospace;
+  font-size: 180%;
+  word-break: break-word;
+  text-align: center;
 }
