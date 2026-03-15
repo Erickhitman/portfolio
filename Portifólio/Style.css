@@ -1,0 +1,283 @@
+html {
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 15px;
+  background-color: #0a0a0a00;
+  width: 100%;
+  z-index: 1;
+  flex-wrap: nowrap;
+}
+
+article,
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  z-index: 0;
+}
+
+.atalho {
+  background-color: #111111;
+  max-width: 700px;
+  width: 95%;
+  height: auto;
+  min-height: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid #6d28d9;
+  gap: 15px;
+}
+
+.atalho a {
+  display: flex;
+  text-decoration: none;
+  color: #e5e5e5;
+  padding: 0 20px;
+  gap: 6px;
+}
+
+.atalho a:hover {
+  color: #8b5cf6;
+}
+
+.atalho a > img {
+  width: 20px;
+  padding-right: 6px;
+  height: 20px;
+}
+
+#home {
+  position: absolute;
+  top: 25%;
+  width: 40%;
+  margin-left: 6%;
+  padding: 1.5px 10px;
+  color: #faeeee;
+}
+
+#home > div {
+  margin-top: 10px;
+}
+.spam {
+  background-color: #6d28d9;
+  border-radius: 50px;
+  padding: 3px 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: #faeeee;
+}
+
+#home > h1 {
+  text-align: center;
+  font-family: "montserrat";
+  text-shadow: 3px 3px 0#6d28d9;
+  margin-top: 35px;
+  font-size: 40px;
+}
+
+#home > h2 {
+  font-family: "montserrat";
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 25px;
+}
+
+#home > p {
+  text-align: justify;
+}
+
+.botao {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.botao > .github,
+.botao > .linkedin {
+  background-color: #8b5cf6;
+  border-radius: 20px;
+  width: 180px;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.botao > .github > a > img {
+  width: 30px;
+  height: 30px;
+  background-color: #8a5cf6d7;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.botao > .github > a {
+  text-decoration: none;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.botao > .github > a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+  text-shadow: 3px 3px #6d28d9;
+}
+
+.botao > .linkedin > a > img {
+  width: 45px;
+  height: 45px;
+  background-color: #8a5cf6d7;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.botao > .linkedin > a {
+  text-decoration: none;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.botao > .linkedin > a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+  text-shadow: 3px 3px #6d28d9;
+}
+
+.home-img {
+  position: absolute;
+  top: 20%;
+  width: 40%;
+  right: 0%;
+  padding: 0;
+  color: #faeeee;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.home-img > div {
+  margin-top: 10px;
+}
+
+.home-img > img {
+  width: 50%;
+  height: 60%;
+  box-shadow: 3px 6px 9px#6d28d9;
+  border-radius: 20px;
+}
+
+#Sobre {
+  position: relative;
+}
+
+.sobre {
+  position: absolute;
+  top: 25%;
+  width: 40%;
+  margin-left: 30%;
+  color: #faeeee;
+  padding: 1.5px 10px;
+  
+}
+
+.sobre > h1 {
+  text-align: center;
+  text-shadow: 3px 3px 0#6d28d9;
+  font-size: 40px;
+  font-family: monospace;
+  border-bottom: 3px dashed #6d28d9;
+  width: 215px;
+  white-space: nowrap;
+  margin: 35px auto 0 auto;
+}
+
+.sobre > p {
+  text-align: justify;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+div {
+  display: inline-block;
+}
+
+.sticky{
+  position: relative;
+}
+
+.pai {
+  position: sticky;
+  top: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+.pai > .timeline > h2 {
+  text-align: center;
+  text-shadow: 3px 3px 0#6d28d9;
+  font-size: 30px;
+  font-family: monospace;
+  width: auto;
+  white-space: nowrap;
+  color: #faeeee;
+}
+
+
+.time-line{
+  position: sticky;
+}
+
+.time-line > div{
+  background-color: #111111;
+  border-radius: 15px;
+}
+
+.time-line > div:hover{
+  border: .5px solid #8b5cf6;
+}
+
+.card1{
+  width: 400px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -100px;
+  left: 100px;
+  
+}
