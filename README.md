@@ -1,83 +1,92 @@
-Pt-br
+<!-- Header -->
+<div align="center">
+  <h1>👾 Erick Soares</h1>
+  <p><em>Transformando ideias em realidade através de código e design.</em></p>
+  <p>
+    <a href="#-portfólio-pessoal---erick">🇧🇷 Português</a> ·
+    <a href="#-personal-portfolio---erick">🇺🇸 English</a>
+  </p>
+</div>
 
-# 🚀 Portfólio Pessoal - Erick
+<br>
 
-Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minha trajetória como desenvolvedor Front-end, meus projetos e minhas habilidades técnicas.
+---
+
+## 🚀 Portfólio Pessoal - Erick
+
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto é a minha vitrine como desenvolvedor — um espaço onde apresento minha trajetória, os projetos que construí, minha stack e como eu penso sobre tecnologia.
+
+> "Não quero apenas escrever código. Quero entender problemas e construir soluções."
 
 ## 📌 Sobre o Projeto
-Este é um site responsivo e moderno, focado em uma experiência de usuário limpa e direta. Ele destaca minha formação acadêmica na **Fatec (ADS)** e técnica no **SENAI (Web Design)**.
 
-> "Transformando ideias em realidade através de código e design."
+Um site one-page com estética **editorial dark + roxa**, inspirado na composição visual de portfólios fotográficos mas traduzido para o universo do desenvolvimento de software. A direção visual foi pensada para transmitir técnica, criatividade e atenção ao detalhe — sem parecer um template genérico.
 
-## 🚧 Status do Projeto
-O projeto está atualmente em **fase de desenvolvimento** (Work in Progress). 
-As funcionalidades estão sendo implementadas e o design está sendo refinado.
+Ele reúne minha formação e experiência em:
 
-### 📅 Próximos Passos:
-- [ ] Finalizar seção de Projetos.
-- [ ] Adicionar responsividade para dispositivos móveis.
-- [ ] Realizar o deploy oficial (GitHub Pages).
+*   **Análise e Desenvolvimento de Sistemas** — Fatec
+*   **Web Design / Desenvolvimento Web** — SENAI
+*   **Back-end (Java + Spring Boot)** — SENAI
+*   **ServiceNow** — SENAI (em andamento)
+
+## 🧭 Estrutura do Site
+
+| Seção | O que mostra |
+|---|---|
+| **Hero** | Apresentação com terminal animado e chips de stack |
+| **Sobre** | Formação, interesses e objetivos |
+| **Projetos** | EhFraude?, Mihon Extension, Urban Barber + repos do GitHub |
+| **Habilidades** | Stack organizada por categoria |
+| **Trajetória** | Timeline de evolução (sem datas forjadas) |
+| **Contato** | GitHub, LinkedIn e e-mail |
 
 ## 🛠️ Tecnologias Utilizadas
-*   **HTML5** - Estruturação semântica.
-*   **CSS3** - Estilização com Flexbox e efeitos modernos (Glassmorphism/Shadows).
-*   **Google Fonts** - Tipografia personalizada (Inter e Montserrat).
-*   **Design Responsivo** - Adaptado para diferentes dispositivos.
+
+*   **HTML5** — Estruturação semântica.
+*   **CSS3** — Grid, Flexbox, animações, variáveis e efeitos de glow/glass.
+*   **JavaScript (vanilla)** — Scrollspy, reveal, parallax sutil, menu mobile.
+*   **Google Fonts** — Inter (texto), Montserrat (display), JetBrains Mono (código).
+*   **SVG inline** — Ícones sem dependências externas.
+*   **Design Responsivo** — Mobile-first adaptado para todas as telas.
 
 ## 🎨 Funcionalidades
-- [x] Menu de navegação fixo (Sticky Header).
-- [x] Seção Hero com chamadas para ação (CTA).
-- [x] Integração com ícones de redes sociais.
-- [x] Design com tema Dark Mode (Estética moderna).
+
+- [x] Menu de navegação fixo com blur ao rolar.
+- [x] Scrollspy que indica a seção ativa no menu.
+- [x] Hero com terminal que "digita" linhas de código.
+- [x] Mockups dos projetos feitos em CSS (sem precisar de imagens genéricas).
+- [x] Screenshots reais do protótipo do **EhFraude?** em molduras editoriais.
+- [x] Animações de entrada sutis (reveal por IntersectionObserver).
+- [x] Suporte a `prefers-reduced-motion`.
+- [x] Tema dark com identidade roxa consistente.
+
+## 🧪 Projetos em Destaque
+
+*   **[EhFraude?](#)** — Detector e treinador de golpes com IA. Projeto autoral em destaque.
+*   **[Mihon Extension](https://github.com/Erickhitman)** — Extensão em Kotlin com integração a APIs, DTOs e debugging real.
+*   **[Urban Barber](https://barberia-six-pearl.vercel.app/)** — Site institucional de barbearia publicado em produção na Vercel.
+*   **Mais no GitHub:** [Guerreiras-da-Fonte](https://github.com/Erickhitman/Guerreiras-da-Fonte) · [DuoGastro](https://github.com/Erickhitman/DuoGastro) · [Nexum](https://github.com/Erickhitman/Nexum) · [world-cup-website](https://github.com/Erickhitman/world-cup-website)
+
+## 📅 Próximos Passos
+
+- [ ] Publicar o **EhFraude?** em produção.
+- [ ] Avançar no curso de **ServiceNow** (SENAI).
+- [ ] Expandir a stack de back-end com novos projetos Java/Spring.
+- [ ] Adicionar mais cases reais na seção de projetos.
 
 ## 🚀 Como visualizar o projeto?
-No momento não é possível visualizar o site online, pois ele ainda está em fase de produção. Em breve, o link do GitHub Pages estará disponível aqui!
 
-## 📬 Contato
-*   **LinkedIn:** [Erick Soares](https://www.linkedin.com/in/erick-soares-6570393b4?utm_source=share_via&utm_content=profile&utm_medium=member_android)
-*   **GitHub:** [@Erickhitman](https://github.com/Erickhitman)
-*   **E-mail:** erickdarochasoares@gmail.com
+### Online
+O site está disponível no GitHub Pages em:
+👉 ****
 
----
-Eng
-# 🚀 Personal Portfolio - Erick
+### Localmente
+```bash
+# Clone o repositório
+git clone https://github.com/Erickhitman/portfolio.git
 
-Welcome to my personal portfolio repository! This project was developed to showcase my journey as a Front-end Developer, my projects, and my technical skills.
+# Entre na pasta
+cd portfolio/Portifólio
 
-## 📌 About the Project
-This is a responsive and modern website, focused on a clean and direct user experience. It highlights my academic background at **Fatec (Systems Analysis and Development)** and technical training at **SENAI (Web Design)**.
-
-> "Transforming ideas into reality through code and design."
-
-## 🚧 Project Status
-This project is currently in **development** (Work in Progress). 
-Features are being implemented and the design is being refined.
-
-### 📅 Roadmap / Next Steps:
-- [ ] Finalize Projects section.
-- [ ] Add responsiveness for mobile devices.
-- [ ] Official deployment (GitHub Pages).
-
-## 🛠️ Technologies Used
-*   **HTML5** - Semantic structuring.
-*   **CSS3** - Styling with Flexbox and modern effects (Glassmorphism/Shadows).
-*   **Google Fonts** - Custom typography (Inter and Montserrat).
-*   **Responsive Design** - Adapted for different devices.
-
-## 🎨 Features
-- [x] Fixed navigation menu (Sticky Header).
-- [x] Hero Section with Call to Action (CTA).
-- [x] Social media icon integration.
-- [x] Dark Mode theme (Modern aesthetics).
-
-## 🚀 How to view the project?
-Viewing is not currently possible as the project is in production. Soon, the GitHub Pages link will be available here!
-
-## 📬 Contact
-*   **LinkedIn:** [Erick Soares](https://www.linkedin.com)
-*   **GitHub:** [@Erickhitman](https://github.com)
-*   **E-mail:** erickdarochasoares@gmail.com
-
----
-Desenvolvido por Erick. <br>
-Developed by Erick.
+# Abra o arquivo no navegador (duplo clique ou servidor local)
+open index.html
