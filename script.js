@@ -1,13 +1,16 @@
 (function () {
   "use strict";
 
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   const header = document.getElementById("header");
-  const onScrollHeader = () => header.classList.toggle("scrolled", window.scrollY > 24);
+  const onScrollHeader = () =>
+    header.classList.toggle("scrolled", window.scrollY > 24);
   onScrollHeader();
   window.addEventListener("scroll", onScrollHeader, { passive: true });
 
@@ -23,7 +26,9 @@
     navToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
   }
 
-  navToggle.addEventListener("click", () => setMenu(!navList.classList.contains("open")));
+  navToggle.addEventListener("click", () =>
+    setMenu(!navList.classList.contains("open")),
+  );
   navList.addEventListener("click", (e) => {
     if (e.target.closest("a")) setMenu(false);
   });
@@ -40,12 +45,12 @@
         navLinks.forEach((link) => {
           link.classList.toggle(
             "is-active",
-            link.getAttribute("href") === `#${entry.target.id}`
+            link.getAttribute("href") === `#${entry.target.id}`,
           );
         });
       });
     },
-    { rootMargin: "-40% 0px -55% 0px" }
+    { rootMargin: "-40% 0px -55% 0px" },
   );
   sections.forEach((section) => spy.observe(section));
 
@@ -62,7 +67,7 @@
           }
         });
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
     );
     revealEls.forEach((el) => revealer.observe(el));
   }
@@ -95,7 +100,7 @@
           ticking = false;
         });
       },
-      { passive: true }
+      { passive: true },
     );
   }
 })();
