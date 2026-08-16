@@ -1,105 +1,539 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifólio</title>
+  <title>Erick Soares — Desenvolvedor</title>
+  <meta name="description" content="Portfólio de Erick Soares. Desenvolvedor apaixonado por tecnologia, código e criação de soluções.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-  <header class="header">
-    <nav class="atalho">
-      <a href="#home"><img src="Img/casa-icon.png" alt="Home">Home</a>
-      <a href="#Sobre"><img src="Img/pessoa-icon.png" alt="Sobre">Sobre</a>
-      <a href="#projetos"><img src="Img/pasta-icon.png" alt="Projetos">Projetos</a>
-      <a href="#skills"><img src="Img/skills-icon.png" alt="Skills">Skills</a>
-      <a href="#contato"><img src="Img/Contato-icon.png" alt="Contato">Contato</a>
+
+  <a class="skip-link" href="#home">Pular para o conteúdo</a>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">{&thinsp;}</span>
+        <span class="brand-text">Erick<b> Soares</b></span>
+      </a>
+
+      <ul class="nav-list" id="nav-list">
+        <li><a class="nav-link is-active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li><a class="nav-link" href="#trajetoria">Trajetória</a></li>
+        <li><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
     </nav>
   </header>
 
-
   <main>
-    <article id="home">
-      <div class="home">
-        <div><span class="spam">✦ Available for work</span></div>
-        <h1>Olá, Eu sou o Erick</h1>
-        <h2>Desenvolvedor Front-end</h2>
-        <p>Desenvolvedor Front-end em formação pela Fatec e SENAI. Especialista em transformar ideias em realidade através de HTML, CSS e um olhar apurado para o design. Pronto para projetos locais e internacionais.</p>
-        <div class="info">
-          <span></span>
-          <span></span>
-        </div>
-        <div class="botao">
-          <div class="github">
-            <a href="https://github.com/Erickhitman" target="_blank"><img src="Img/GitHub_Invertocat_Logo.svg.png" alt="">GitHub</a>
-          </div>
-          <div class="linkedin">
-            <a href="https://www.linkedin.com/in/erick-soares-6570393b4?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img src="Img/Linkedin preto.png" alt="Linkedin">Linkedin</a>
-          </div>
-        </div>
-        <div class="redes">
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-        </div>
-      </div>
-      <div class="home-img">
-        <img src="Img/Foto de perfil.png" alt="Eu">
-      </div>
-    </article>
 
-    <section id="Sobre">
-      <div class="sobre">
-        <h1>Sobre Mim</h1>
-        <p>Me chamo Erick, tenho 18 anos e sou apaixonado por tecnologia e design. Minha jornada começou com um técnico em Administração, onde desenvolvi organização e visão de processos. Com o tempo, descobri na programação uma forma de transformar ideias em soluções digitais.
-        <br><br>
-        Atualmente curso Análise e Desenvolvimento de Sistemas na Fatec e também estudo Web Design no SENAI, buscando evoluir tanto na parte técnica quanto na criação de interfaces modernas e bem estruturadas.
-        <br><br>
-        Tenho grande interesse em desenvolvimento Front-end, pois acredito que uma boa interface é a ponte entre a tecnologia e as pessoas. Por isso, também invisto no aperfeiçoamento do meu inglês e no aprendizado contínuo de novas ferramentas e boas práticas.
-        <br><br>
-        Meu objetivo é unir design e código para criar experiências digitais que sejam visualmente marcantes, funcionais e pensadas para o usuário.</p>
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+        <div class="hero-gridlines"></div>
       </div>
-      </section>
-    <br>
-<section .s>
-      <div class="pai">
-        <div class="timeline">
-          <h2>Um pouco da minha jornada...</h2>
-        </div>
-      </div>
-        <div class="time-line">
-          <div class="linha-guia"></div>
-          <div class="card1">
-            <h3>Etec - Ferraz de Vasconcelos</h3>
-            <h4>Técnico em Administração</h4>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Desenvolvedor &amp; criador</p>
+          <h1 class="hero-title reveal" style="--d:.08s">Erick<br>Soares</h1>
+          <p class="hero-sub reveal" style="--d:.16s">
+            Desenvolvedor apaixonado por tecnologia, código e criação de soluções.
+          </p>
+          <p class="hero-phrase reveal" style="--d:.22s">
+            Transformando ideias em realidade através de <em>código</em> e <em>design</em>.
+          </p>
+
+          <div class="hero-cta reveal" style="--d:.3s">
+            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn-ghost" href="#sobre">Sobre mim</a>
           </div>
-          <div class="card2">
-            <h3>Etec - Ferraz de Vasconcelos</h3>
-            <h4>Técnico em Administração</h4>
-          </div>
-          <div class="card3">
-            <h3>Etec - Ferraz de Vasconcelos</h3>
-            <h4>Técnico em Administração</h4>
-          </div>
-          <div class="card4">
-            <h3>Etec - Ferraz de Vasconcelos</h3>
-            <h4>Técnico em Administração</h4>
-          </div>
-          <div class="final">
-            <h3>Em construção...</h3>
+
+          <div class="hero-social reveal" style="--d:.38s">
+            <a class="social-link" href="https://github.com/Erickhitman" target="_blank" rel="noopener" aria-label="GitHub de Erick Soares">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88 1.54-3.88 1.54-.53 1.34-1.28 1.7-1.28 1.7-1.05.72.08.73.08.73 1.16.08 1.77-1.19 1.77-1.19 1.03-1.76 2.66-1.25 3.31-.96.1.75.4 1.25.72 1.54-2.55.29-5.23 1.28-5.23 5.68 0 1.26.45 2.28 1.19 3.1-.11.97-.45 1.84-.11 2.62 0 0 .97-.31 3.18-1.18.92.26 1.91.39 2.89.4.98-.01 1.97-.14 2.89-.4 2.21.87 3.18 1.18 3.18 1.18.34-.78.12-1.65.01-2.62.74-.82 1.19-1.84 1.19-3.1 0-4.41-2.69-5.39-5.24-5.68.41-.36.78-1.05.78-2.12 0-1.53-.01-2.76-.01-3.14 0-.31.21-.67.8-.56A10.52 10.52 0 0 1 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/erick-soares-6570393b4" target="_blank" rel="noopener" aria-label="LinkedIn de Erick Soares">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+              </svg>
+            </a>
           </div>
         </div>
-</section>  
 
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-panel"></div>
 
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="code-title">erick.js — portfolio</span>
+            </div>
+            <pre class="code-body" id="code-body"><code><span class="code-line"><span class="tk-kw">const</span> <span class="tk-var">erick</span> = {</span>
+<span class="code-line">  stack: [<span class="tk-str">"react"</span>, <span class="tk-str">"java"</span>, <span class="tk-str">"kotlin"</span>],</span>
+<span class="code-line">  foco: [<span class="tk-str">"web"</span>, <span class="tk-str">"apis"</span>, <span class="tk-str">"ia"</span>],</span>
+<span class="code-line">  lema: <span class="tk-str">"entender antes de codar"</span>,</span>
+<span class="code-line">};</span>
+<span class="code-line">&nbsp;</span>
+<span class="code-line"><span class="tk-kw">while</span> (<span class="tk-var">curioso</span>) {</span>
+<span class="code-line">  <span class="tk-fn">aprender</span>();</span>
+<span class="code-line">  <span class="tk-fn">construir</span>();</span>
+<span class="code-line">  <span class="tk-fn">evoluir</span>();</span>
+<span class="code-line">}</span></code><span class="code-caret" id="code-caret"></span></pre>
+          </div>
+
+          <ul class="float-chips">
+            <li class="chip chip-1">Java</li>
+            <li class="chip chip-2">React</li>
+            <li class="chip chip-3">Kotlin</li>
+            <li class="chip chip-4">IA</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#sobre">scroll<span class="scroll-line" aria-hidden="true"></span></a>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-left reveal">
+          <span class="about-watermark" aria-hidden="true">ABOUT</span>
+          <p class="eyebrow">Sobre</p>
+          <h2 class="section-title">Código com propósito, design com intenção.</h2>
+          <span class="about-stroke" aria-hidden="true"></span>
+        </div>
+
+        <div class="about-right">
+          <p class="about-lead reveal">
+            Sou Erick Soares, desenvolvedor interessado em transformar ideias em soluções
+            através da tecnologia.
+          </p>
+          <p class="reveal" style="--d:.08s">
+            Minha trajetória envolve desenvolvimento web, inteligência artificial, APIs,
+            back-end com Java e Spring Boot, e criação de projetos próprios.
+          </p>
+          <p class="reveal" style="--d:.14s">
+            Tenho interesse em entender não apenas como escrever código, mas também como
+            estruturar, testar, documentar e evoluir sistemas.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact reveal" style="--d:.1s">
+              <h3>Formação</h3>
+              <ul>
+                <li><strong>Análise e Desenvolvimento de Sistemas</strong> — Fatec</li>
+                <li><strong>Web Design / Desenvolvimento Web</strong> — SENAI</li>
+                <li><strong>Back-end (Java + Spring Boot)</strong> — SENAI</li>
+                <li><strong>ServiceNow</strong> — SENAI · inscrito</li>
+              </ul>
+            </div>
+            <div class="fact reveal" style="--d:.18s">
+              <h3>Interesses</h3>
+              <p>Interfaces bem construídas, inteligência artificial, integração de APIs,
+                back-end robusto e boas práticas de engenharia de software.</p>
+            </div>
+            <div class="fact reveal" style="--d:.26s">
+              <h3>Objetivo</h3>
+              <p>Unir design e código para criar experiências digitais marcantes, funcionais
+                e pensadas para o usuário.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Projetos</p>
+          <h2 class="section-title">Trabalhos selecionados</h2>
+          <p class="section-sub">Projetos autorais, escolares, extensões, sites e experimentos.</p>
+        </header>
+
+        <article class="project project-featured reveal">
+          <header class="featured-head">
+            <span class="project-index">01</span>
+            <p class="project-cat">Artificial Intelligence / Cybersecurity</p>
+            <h3 class="project-title">EhFraude?</h3>
+            <span class="project-badge">projeto autoral em destaque</span>
+            <p class="project-desc">
+              Detector e Treinador de Golpes desenvolvido para auxiliar usuários na
+              identificação de mensagens e links potencialmente fraudulentos utilizando
+              inteligência artificial.
+            </p>
+          </header>
+
+          <div class="media-ehfraude">
+            <figure class="frame frame-browser">
+              <div class="frame-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="frame-url">ehfraude — Verificador de Golpes com IA</span>
+              </div>
+              <div><img class="Image" src="Img/EhFraude-inicio.svg" alt="Interface desktop do EhFraude? com campo de análise, indicador de segurança e dicas"></div>
+            </figure>
+
+            <figure class="frame frame-phone">
+              <img src="Img/EhFraude-Mobile.svg" alt="Versão mobile do EhFraude? com indicador de segurança: seguro, atenção e perigo">
+              <figcaption>mobile · indicador de segurança</figcaption>
+            </figure>
+
+            <figure class="frame frame-treino">
+              <img src="Img/EhFraude-modoTreino.svg" alt="Modo treino gamificado do EhFraude? com desafio, resposta correta, XP e progresso">
+              <figcaption>modo treino · gamificação +XP</figcaption>
+            </figure>
+          </div>
+
+          <div class="featured-foot">
+            <ul class="project-feats">
+              <li>Análise de mensagens</li>
+              <li>Detecção de indicadores de golpe</li>
+              <li>Classificação de risco</li>
+              <li>Explicação dos motivos da classificação</li>
+              <li>Treinamento gamificado</li>
+              <li>Integração com IA</li>
+              <li>Extensão de navegador</li>
+            </ul>
+            <ul class="tech-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>JavaScript</li>
+              <li>APIs de IA</li>
+              <li>LLM</li>
+              <li>Banco de dados</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project project-reverse reveal">
+          <div class="project-row">
+            <div class="project-media">
+              <div class="terminal">
+                <div class="terminal-bar">
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  <span class="code-title">mihon-ext — debug.log</span>
+                </div>
+                <pre class="terminal-body"><span class="t-dim">$</span> GET https://api.exemplo.com/v2/capitulos
+<span class="t-ok">200 OK</span> · 43ms · json parse ok
+<span class="t-dim">$</span> map json → DTO&lt;ChapterList&gt;
+<span class="t-warn">WARN</span> campo "source" nulo → fallback aplicado
+<span class="t-dim">$</span> retry com tratamento de erro
+<span class="t-ok">FIX</span> serialização corrigida · testes ok ✔</pre>
+              </div>
+              <div class="kotlin-card">
+                <pre><span class="tk-kw">data class</span> <span class="tk-fn">ChapterDto</span>(
+  <span class="tk-kw">val</span> id: <span class="tk-fn">Long</span>,
+  <span class="tk-kw">val</span> title: <span class="tk-fn">String</span>,
+)</pre>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <span class="project-index">02</span>
+              <p class="project-cat">Kotlin / API Integration</p>
+              <h3 class="project-title">Mihon Extension</h3>
+              <p class="project-desc">
+                Desenvolvimento e manutenção de uma extensão para o Mihon, envolvendo
+                integração com APIs externas, análise de requisições HTTP, DTOs,
+                serialização, debugging e tratamento de erros.
+              </p>
+              <p class="project-note">
+                Trabalho investigativo: analisar requisições, entender endpoints, depurar
+                serialização e resolver problemas reais de integração.
+              </p>
+              <ul class="tech-list">
+                <li>Kotlin</li>
+                <li>OkHttp</li>
+                <li>REST API</li>
+                <li>DTO</li>
+                <li>JSON</li>
+                <li>HTTP</li>
+                <li>Debugging</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 · Urban Barber -->
+        <article class="project reveal">
+          <div class="project-row">
+            <div class="project-media">
+              <div class="barber-frame">
+                <span class="barber-pole" aria-hidden="true"></span>
+                <div class="barber-content">
+                  <p class="barber-stars" aria-hidden="true">★ ★ ★ ★ ★</p>
+                  <h4 class="barber-name">Urban Barber</h4>
+                  <p class="barber-tag">“A arte de se destacar.”</p>
+                  <ul class="barber-chips">
+                    <li>Degradê</li>
+                    <li>Barba</li>
+                    <li>Skin fade</li>
+                    <li>Visagismo</li>
+                  </ul>
+                  <span class="barber-cta">Agende seu horário →</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <span class="project-index">03</span>
+              <p class="project-cat">Front-end / Web Design</p>
+              <h3 class="project-title">Urban Barber</h3>
+              <p class="project-desc">
+                Site institucional completo para uma barbearia moderna: hero promocional,
+                tabela de serviços, depoimentos, equipe, horários e agendamento.
+                Publicado em produção na Vercel.
+              </p>
+              <ul class="project-feats">
+                <li>Design responsivo</li>
+                <li>Serviços e preços</li>
+                <li>Depoimentos de clientes</li>
+                <li>Formulário de agendamento</li>
+              </ul>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Vercel</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-ghost btn-small" href="https://barberia-six-pearl.vercel.app/" target="_blank" rel="noopener">Ver ao vivo ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mais no GitHub -->
+        <div class="repos reveal">
+          <p class="eyebrow">Mais no GitHub</p>
+          <div class="repos-list">
+            <a class="repo-row" href="https://github.com/Erickhitman/Guerreiras-da-Fonte" target="_blank" rel="noopener">
+              <span class="repo-name">Guerreiras-da-Fonte</span>
+              <span class="repo-desc">Landing page fictícia · HTML &amp; CSS</span>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="repo-row" href="https://github.com/Erickhitman/DuoGastro" target="_blank" rel="noopener">
+              <span class="repo-name">DuoGastro</span>
+              <span class="repo-desc">Receitas artesanais · HTML &amp; CSS</span>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="repo-row" href="https://github.com/Erickhitman/Nexum" target="_blank" rel="noopener">
+              <span class="repo-name">Nexum</span>
+              <span class="repo-desc">Landing page · HTML &amp; CSS puro</span>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="repo-row" href="https://github.com/Erickhitman/world-cup-website" target="_blank" rel="noopener">
+              <span class="repo-name">world-cup-website</span>
+              <span class="repo-desc">Site informativo · HTML · SENAI</span>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="repo-row" href="https://github.com/Erickhitman?tab=repositories" target="_blank" rel="noopener">
+              <span class="repo-name">Java no SENAI</span>
+              <span class="repo-desc">suporte · POO · Agenda — fundamentos de back-end</span>
+              <span class="contact-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Acadêmicos (compacto) -->
+        <div class="academic reveal">
+          <p class="eyebrow">Projetos acadêmicos</p>
+          <div class="academic-grid">
+            <div class="academic-item">
+              <h3>Projeto Integrador</h3>
+              <p>Desenvolvimento de sistemas de ponta a ponta, com documentação e trabalho
+                em equipe.</p>
+            </div>
+            <div class="academic-item">
+              <h3>Engenharia de Software</h3>
+              <p>Análise de requisitos, modelagem UML e boas práticas de projeto.</p>
+            </div>
+            <div class="academic-item">
+              <h3>Banco de Dados</h3>
+              <p>Modelagem, persistência e integração com sistemas desenvolvidos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="section skills" id="habilidades">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Habilidades</p>
+          <h2 class="section-title">Ferramentas de pensamento</h2>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <span class="skill-num">01</span>
+            <h3 class="skill-name">Desenvolvimento</h3>
+            <ul class="skill-items">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Kotlin</li>
+              <li>Java</li>
+              <li>Spring Boot</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" style="--d:.08s">
+            <span class="skill-num">02</span>
+            <h3 class="skill-name">Inteligência Artificial</h3>
+            <ul class="skill-items">
+              <li>LLMs</li>
+              <li>APIs de IA</li>
+              <li>Prompt Engineering</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" style="--d:.16s">
+            <span class="skill-num">03</span>
+            <h3 class="skill-name">Backend / APIs</h3>
+            <ul class="skill-items">
+              <li>REST</li>
+              <li>JSON</li>
+              <li>HTTP</li>
+              <li>OkHttp</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" style="--d:.24s">
+            <span class="skill-num">04</span>
+            <h3 class="skill-name">Ferramentas</h3>
+            <ul class="skill-items">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Figma</li>
+              <li>Astah UML</li>
+              <li>Android Studio</li>
+              <li>Intelij</li>
+              <li>VS Code</li>
+              <li>ServiceNow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAJETÓRIA ============ -->
+    <section class="section trajectory" id="trajetoria">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Trajetória</p>
+          <h2 class="section-title">Evolução, não apenas datas</h2>
+        </header>
+
+        <ol class="timeline reveal">
+          <li><span class="tl-dot"></span>
+            <p>Inicio na Fatec Ferraz de Vasconcelos</p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Formação em Web Design — SENAI</p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Projetos acadêmicos</p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Projeto Integrador</p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Desenvolvimento do <strong>EhFraude?</strong></p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Estudos de Inteligência Artificial e APIs</p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Desenvolvimento em Kotlin (projeto do mihon)</p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>Back-end com <strong>Java e Spring Boot</strong></p>
+          </li>
+          <li><span class="tl-dot"></span>
+            <p>ServiceNow — nova formação caminho no SENAI</p>
+          </li>
+          <li class="tl-next"><span class="tl-dot"></span>
+            <p>Próximos projetos <em>— em construção…</em></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ DESTAQUE ============ -->
+    <section class="highlight" aria-label="Frase de destaque">
+      <div class="container reveal">
+        <span class="highlight-quote" aria-hidden="true">”</span>
+        <p class="highlight-text">
+          Não quero apenas escrever código.<br>
+          Quero entender problemas e <em>construir soluções</em>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section contact" id="contato">
+      <div class="container contact-inner">
+        <p class="eyebrow reveal">Contato</p>
+        <h2 class="contact-title reveal" style="--d:.08s">Vamos criar algo?</h2>
+        <p class="contact-text reveal" style="--d:.16s">
+          Tem uma ideia, projeto ou oportunidade? Entre em contato.
+        </p>
+
+        <div class="contact-links reveal" style="--d:.24s">
+          <a class="contact-link" href="https://github.com/Erickhitman" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@Erickhitman</span>
+            <span class="contact-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/erick-soares-6570393b4" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Erick Soares</span>
+            <span class="contact-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="contact-link" href="mailto:erickdarochasoares@gmail.com">
+            <span class="contact-label">E-mail</span>
+            <span class="contact-value">erickdarochasoares@gmail.com</span>
+            <span class="contact-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="contact-cta reveal" style="--d:.32s">
+          <a class="btn btn-primary" href="mailto:erickdarochasoares@gmail.com">Enviar e-mail</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; developed by Erick Soares. © <span id="year"></span></p>
+      <div class="footer-links">
+        <a href="https://github.com/Erickhitman" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/erick-soares-6570393b4" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
