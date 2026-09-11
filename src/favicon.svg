@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .es { font: 800 17px Montserrat, Inter, system-ui, sans-serif; letter-spacing: -0.5px; }
+    .fill { fill: #7C3AED; }
+    @media (prefers-color-scheme: light) {
+      .fill { fill: #5B21B6; }
+    }
+  </style>
+  <text class="es fill" x="50%" y="54%"
+        dominant-baseline="middle" text-anchor="middle">ES</text>
+</svg>
